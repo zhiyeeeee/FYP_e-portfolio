@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lim Zhi Yee | FYP E-Portfolio</title>
+<link rel="icon" type="image/jpeg" href="profile.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
@@ -15,14 +16,29 @@ nav a{color:white;text-decoration:none;}
 section{padding:90px 10%;}
 .hero{
 min-height:100vh;
-background:linear-gradient(rgba(10,46,115,0.88),rgba(10,46,115,0.88));
+
+/* Badminton background image */
+background:
+linear-gradient(
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.55)
+),
+url('badminton.jpg');
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
 color:white;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+
+padding:100px 20px;
 }
+
 .profile{
 width:180px;height:180px;border-radius:50%;
 border:5px solid white;object-fit:cover;margin-bottom:25px;
@@ -55,12 +71,51 @@ gap:20px;
 .gallery img{
 width:100%;
 border-radius:10px;
+display:block;
+}
+.gallery figure{
+margin:0;
+text-align:center;
+}
+
+.gallery figcaption{
+padding-top:10px;
+font-size:14px;
+font-weight:500;
+color:#555;
 }
 .pdf-box{
 padding:25px;
 background:#eef3ff;
 border-radius:15px;
 text-align:center;
+}
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+margin-bottom:30px;
+}
+
+table th{
+background:#0A2E73;
+color:white;
+padding:12px;
+text-align:center;
+}
+
+table td{
+padding:12px;
+text-align:center;
+border:1px solid #ddd;
+}
+
+table tr:nth-child(even){
+background:#f8f8f8;
+}
+
+table tr:hover{
+background:#eef3ff;
 }
 footer{
 background:#0A2E73;
@@ -77,9 +132,14 @@ padding:30px;
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About Me</a></li>
 <li><a href="#fyp">My FYP</a></li>
-<li><a href="#activities">Activities</a></li>
+<li><a href="#activities">FYP Timeline</a></li>
+<li><a href="#attendance">Attendance</a></li>
 <li><a href="#reflection">Reflection</a></li>
+<li><a href="#appreciation">Appreciation</a></li>
+<li><a href="#references">References</a></li>
 <li><a href="#gallery">Gallery</a></li>
+<li><a href="#achievements">Achievements</a></li>
+
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
@@ -88,6 +148,7 @@ padding:30px;
 <img src="profile.jpg" class="profile">
 <h1>LIM ZHI YEE</h1>
 <p>Bachelor of Science with Honours (Decision Science)</p>
+<p>SQQZK4993 ACADEMIC PROJECT (Group H)</p>
 <h2>A PREFERENCE-BASED OPTIMIZATION MODEL FOR UNIVERSITY BADMINTON COURT SCHEDULING USING A GENETIC ALGORITHM</h2>
 <p>Supervisor: Prof. Madya Dr. Syariza Binti Abdul Rahman</p>
 <a href="#about" class="btn">Explore My Journey</a>
@@ -100,73 +161,637 @@ padding:30px;
 <p><b>Student ID:</b> 298386</p>
 <p><b>Programme:</b> Bachelor of Science with Honours (Decision Science)</p>
 <p><b>University:</b> Universiti Utara Malaysia</p>
-<p><b>CGPA:</b> 3.79</p>
 <br>
-<p>I am a passionate and detail-oriented Decision Science student with strong interests in optimization, data analytics and programming. I enjoy solving real-world problems through mathematical modelling and data-driven decision making.</p>
-</div>
+<p>I am an organized, passionate and detail-oriented undergraduate student who has skills in Excel, SQL, Tableau, and data visualization, with hands-on experience in Python projects and machine learning. I have strong interests in optimization, data analytics, and programming and enjoy solving real-world problems through mathematical modelling and data-driven decision making.
+</p></div>
 
 <h2 class="title">Career Aspiration</h2>
 <div class="card">
-<p>My career aspiration is to become a Data Analyst or Operations Research Analyst where I can apply analytical techniques and optimization methods to solve real-world problems and support data-driven decision making.</p>
+<p>My career aspiration is to become a Data Analyst or analyst-related professional where I can apply analytical techniques and optimization methods to solve real-world problems and support data-driven decision making.</p>
 </div>
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="card">
+<h3>Programming Languages</h3>
+<ul>
+<li>Python</li>
+<li>Java</li>
+<li>SQL</li>
+<li>VBA</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Data Analytics & Visualization</h3>
+<ul>
+<li>Mathematical Modelling</li>
+<li>Optimization Techniques</li>
+<li>Microsoft Excel</li>
+<li>Tableau</li>
+<li>Data Visualization</li>
+<li>Data Cleaning</li>
+<li>Machine Learning</li>
+<li>Geospatial Analysis</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Software & Tools</h3>
+<ul>
+<li>MySQL</li>
+<li>Arena Simulation</li>
+<li>Orange Data Mining</li>
+<li>Visual Studio Code</li>
+<li>QM for Windows</li>
+<li>Microsoft Office</li>
+<li>Canva</li>
+<li>CapCut</li>
+</ul>
+</div>
+
+</div>
+
 </section>
 
 <section id="fyp">
 <h1 class="title">My Final Year Project</h1>
 <div class="card">
+
 <h3>Project Title</h3>
-<p>A Preference-Based Optimization Model for University Badminton Court Scheduling Using a Genetic Algorithm</p>
+
+<p>
+A Preference-Based Optimization Model for University Badminton Court Scheduling Using a Genetic Algorithm
+</p>
+
 <br>
+
 <h3>Project Background</h3>
-<p>This study develops a preference-based optimization model using a Genetic Algorithm to maximize user satisfaction while minimizing booking conflicts in university badminton court scheduling.</p>
+
+<p>
+Badminton is one of the most popular sports among university students. However, increasing demand for badminton courts often leads to scheduling conflicts, duplicate bookings and unfair allocations. Moreover, previous studies didn't consider the user preferences in court scheduling. Therefore, this study develops a preference-based optimization model using a Genetic Algorithm to maximize user satisfaction while minimizing scheduling conflicts.
+</p>
+
+<br>
+<h3>Research Gap</h3>
+
+<p>
+Most previous studies focused on reducing scheduling conflicts and improving court utilization but did not consider user preferences in badminton court scheduling. Therefore, there is limited research that integrates Genetic Algorithm with user preferences for university badminton court scheduling.
+</p>
+
+<br>
+
+<h3>General Objective (RO1)</h3>
+
+<p>
+To maximize user preference satisfaction while ensuring efficient and fair badminton court scheduling by developing and evaluating a preference-based optimization model.
+</p>
+
+<br>
+
+<h3>Specific Objectives</h3>
+
+<ul>
+
+<li>
+<b>RO2:</b> To identify the objective function and constraints in badminton court scheduling that satisfy user preferences.
+</li>
+
+<li>
+<b>RO3:</b> To solve the preference-based badminton court scheduling model using Genetic Algorithm.
+</li>
+
+<li>
+<b>RO4:</b> To evaluate the performance of the proposed model based on user preference satisfaction, penalty (conflicts), fitness value and court utilization.
+</li>
+
+</ul>
+
+<br>
+
+<h3>Research Significance</h3>
+
+<ul>
+<li>Increases user satisfaction through preference-based scheduling.</li>
+<li>Improves operational efficiency in badminton court scheduling.</li>
+<li>Reduces booking conflicts and duplicate allocations.</li>
+<li>Demonstrates a real-world application of Genetic Algorithm in sports scheduling.</li>
+</ul>
+
+<br>
+
+<h3>Research Methodology</h3>
+
+<ol>
+<li>Identify problem and conduct literature review on sports scheduling and Genetic Algorithm.</li>
+<li>Develop mathematical formulation, objective function and scheduling constraints.</li>
+<li>Design and implement Genetic Algorithm using Python.</li>
+<li>Conduct experiments using five datasets with different numbers of users (30, 50, 100, 300 and 500 users).</li>
+<li>Evaluate model performance based on user preference satisfaction, conflicts, fitness value and court utilization.</li>
+</ol>
+
+<h4>Figure 1: Genetic Algorithm Flowchart</h4>
+
+<img src="ga_flowchart.png"
+     style="width:100%;
+     max-width:700px;
+     display:block;
+     margin:auto;
+     border-radius:10px;">
+
+<p style="text-align:center;">
+Figure 1 shows the workflow of the proposed Genetic Algorithm for solving the badminton court scheduling problem. The proposed Genetic Algorithm begins with random court allocation generation,
+followed by fitness evaluation, tournament selection, single-point crossover and random mutation until the maximum generation is reached.
+</p>
+
+<h3>Key Findings</h3>
+
+<h3>User Scalability Analysis</h3>
+
+<h3>Table 1: Performance Summary</h3>
+
+<table border="1"
+style="width:100%;
+border-collapse:collapse;
+margin-top:20px;">
+
+<tr style="background:#0A2E73;color:white;">
+<th>Number of Users</th>
+<th>Fitness Value</th>
+<th>Conflicts</th>
+<th>Court Utilization</th>
+</tr>
+
+<tr>
+<td>30</td>
+<td>292.5</td>
+<td>0</td>
+<td>5.95%</td>
+</tr>
+
+<tr>
+<td>50</td>
+<td>422.5</td>
+<td>0</td>
+<td>9.92%</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td>620.0</td>
+<td>0</td>
+<td>19.84%</td>
+</tr>
+
+<tr>
+<td>300</td>
+<td>-2390.0</td>
+<td>38.5</td>
+<td>59.52%</td>
+</tr>
+
+<tr>
+<td>500</td>
+<td>-11437.5</td>
+<td>137.0</td>
+<td>99.21%</td>
+</tr>
+
+</table>
+<p style="text-align:center;">
+Table 1 shows that the proposed model generated conflict-free schedules for datasets of 30, 50 and 100 users. However, conflicts increased significantly for datasets with 300 and 500 users due to limited court capacity.
+</p>
+
+
+<h4>Figure 2: GA Convergence Graph (150 generations) </h4>
+
+<img src="ga_convergence_150_generations.png"
+     style="width:100%;
+     max-width:700px;
+     display:block;
+     margin:auto;
+     border-radius:10px;">
+
+<p style="text-align:center;">
+Figure 2 illustrates the convergence behaviour of the Genetic Algorithm over 150 generations.
+</p>
+
+<h4>Figure 3: GA Convergence Graph (200 generations) </h4>
+
+<img src="ga_convergence_200_generations.png"
+     style="width:100%;
+     max-width:700px;
+     display:block;
+     margin:auto;
+     border-radius:10px;">
+
+<p style="text-align:center;">
+Figure 3 illustrates the convergence behaviour of the Genetic Algorithm over 200 generations.
+</p>
+
+<h3>Comparison with Simulated Annealing</h3>
+
+<table border="1">
+<tr>
+<th>Users</th>
+<th>GA Fitness</th>
+<th>SA Fitness</th>
+</tr>
+
+<tr>
+<td>30</td>
+<td>292.5</td>
+<td>300</td>
+</tr>
+
+<tr>
+<td>50</td>
+<td>422.5</td>
+<td>500</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td>620</td>
+<td>1000</td>
+</tr>
+
+<tr>
+<td>300</td>
+<td>-2390</td>
+<td>3000</td>
+</tr>
+
+<tr>
+<td>500</td>
+<td>-11437.5</td>
+<td>4865</td>
+</tr>
+</table>
+<p style="text-align:center;">
+The comparison indicates that Simulated Annealing achieved better fitness values than the Genetic Algorithm for larger datasets, suggesting that SA is more effective in handling high-demand scheduling scenarios.
+</p>
+
+<h4>Figure 4: Comparison of GA and SA Fitness Values</h4>
+
+<img src="ga_vs_sa.png"
+style="width:100%;
+max-width:700px;
+display:block;
+margin:auto;
+border-radius:10px;">
+
+<p style="text-align:center;">
+Figure 4 compares the fitness values obtained by the Genetic Algorithm and Simulated Annealing for different numbers of users.
+</p>
+
+<ul>
+<li>Conflict-free schedules were generated for datasets of 30, 50 and 100 users.</li>
+<li>Court utilization increased as the number of users increased.</li>
+<li>The Genetic Algorithm consistently converged to high-quality solutions within 150 and 200 generations.</li>
+<li>Simulated Annealing outperformed the Genetic Algorithm for larger datasets.</li>
+<li>Higher booking demand resulted in scheduling conflicts and negative fitness values.</li>
+</ul>
+
+<br>
+
+<h3>Challenges and Limitations</h3>
+
+<ul>
+<li>Five fixed datasets were used.</li>
+<li>User preference data were randomly generated and may not fully represent actual university booking behaviour.</li>
+<li>The study only considered six badminton courts.</li>
+<li>The model used a single-objective optimization approach.</li>
+</ul>
+
+<h3>Skills Gained Through FYP</h3>
+
+<ul>
+<li>Research and literature review skills.</li>
+<li>Mathematical modelling and optimization.</li>
+<li>Python programming and implementation of Genetic Algorithm using PyGAD.</li>
+<li>Data analysis and interpretation.</li>
+<li>Academic writing and presentation skills.</li>
+<li>Problem-solving and critical thinking.</li>
+<li>Time Management.</li>
+</ul>
+
 </div>
 
 <div class="pdf-box">
 <h3>FYP Poster (PDF)</h3>
-<p>Place your poster PDF in the same folder and rename it as:</p>
-<p><b>FYP_Poster.pdf</b></p>
+
+<p>
+The poster summarises the research objectives, methodology and key findings of this study.
+</p>
+
 <br>
-<a href="FYP_Poster.pdf" target="_blank" class="btn">Open Poster PDF</a>
+
+<a href="FYP_Poster.pdf" target="_blank" class="btn">
+Open Poster PDF
+</a>
+
 </div>
+
+</section>
+<section id="activities">
+
+<h1 class="title">FYP Timeline & Activities</h1>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>11 November 2025</h3>
+<p>• First meeting in Semester A251.</p>
+<p>• Selected and discussed the research topic.</p>
+</div>
+
+<div class="timeline-item">
+<h3>26 November 2025</h3>
+<p>• Prepared interview documents.</p>
+<p>• Contacted the UUM Sport Centre PIC for data collection and references.</p>
+</div>
+
+<div class="timeline-item">
+<h3>11 December 2025</h3>
+<p>• Conducted an interview with Mr. Aizul Firdaus, staff of UUM Sport Centre.</p>
+</div>
+
+<div class="timeline-item">
+<h3>18 December 2025</h3>
+<p>• Second meeting to discuss sets, variables, indices, constraints, objective function and the first mathematical model development.</p>
+</div>
+
+<div class="timeline-item">
+<h3>30 December 2025</h3>
+<p>• Third meeting for mathematical model development.</p>
+<p>• Received guidelines for proposal presentation from Dr. Syariza.</p>
+</div>
+
+<div class="timeline-item">
+<h3>7 January 2026</h3>
+<p>• Presented FYP Proposal to evaluator, Dr. Aida.</p>
+</div>
+
+<div class="timeline-item">
+<h3>8 January 2026</h3>
+<p>• Submitted FYP Proposal Report.</p>
+</div>
+
+<div class="timeline-item">
+<h3>15 March 2026</h3>
+<p>• Prepared Chapter 1, Chapter 2 and Chapter 3 report.</p>
+</div>
+
+<div class="timeline-item">
+<h3>15 April 2026</h3>
+<p>• First meeting in Semester A252 for discussion on Chapters 1, 2 and 3.</p>
+</div>
+
+<div class="timeline-item">
+<h3>22 April 2026</h3>
+<p>• Discussion on generating simulated datasets.</p>
+</div>
+
+<div class="timeline-item">
+<h3>29 April 2026</h3>
+<p>• Development of Genetic Algorithm model and coding implementation.</p>
+</div>
+
+<div class="timeline-item">
+<h3>4 May 2026</h3>
+<p>• Conducted experiments using datasets of 30, 50, 100, 300 and 500 users.</p>
+</div>
+
+<div class="timeline-item">
+<h3>13 May 2026</h3>
+<p>• Discussion on different outputs and experimental results.</p>
+</div>
+
+<div class="timeline-item">
+<h3>15 June 2026</h3>
+<p>• Discussion on final corrections for Chapters 1 and 2.</p>
+</div>
+
+<div class="timeline-item">
+<h3>18 June 2026</h3>
+<p>• Continued writing Chapters 3 and 4.</p>
+</div>
+
+<div class="timeline-item">
+<h3>23 June 2026</h3>
+<p>• Discussion and checking of the thesis report draft.</p>
+</div>
+
+<div class="timeline-item">
+<h3>25 June 2026</h3>
+<p>• Discussion on poster evaluation design and ideas.</p>
+</div>
+
+<div class="timeline-item">
+<h3>27 June 2026</h3>
+<p>• Designed presentation poster and prepared presentation slides.</p>
+</div>
+
+<div class="timeline-item">
+<h3>29 June 2026</h3>
+<p>• Completed Final Year Project presentation to evaluators, Dr. Aida and Dr. Rosshairy.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2 July 2026</h3>
+<p>• Finalised Chapters 2, 4, 5 and appendices.</p>
+<p>• Prepared e-portfolio.</p>
+</div>
+
+<div class="timeline-item">
+<h3>9 July 2026</h3>
+<p>• Submitted the final report softcopy to supervisor, Prof. Madya Dr. Syariza Binti Abdul Rahman.</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="activities">
-<h1 class="title">Weekly Activities</h1>
-<div class="timeline">
-<div class="timeline-item"><h3>Week 1</h3><p>Topic discussion and literature review.</p></div>
-<div class="timeline-item"><h3>Week 2</h3><p>Research objectives and problem formulation.</p></div>
-<div class="timeline-item"><h3>Week 3</h3><p>Mathematical modelling and constraints formulation.</p></div>
-<div class="timeline-item"><h3>Week 4</h3><p>Dataset preparation and coding design.</p></div>
-<div class="timeline-item"><h3>Week 5</h3><p>Genetic Algorithm implementation.</p></div>
-<div class="timeline-item"><h3>Week 6</h3><p>Debugging and parameter tuning.</p></div>
-<div class="timeline-item"><h3>Week 7</h3><p>Experimental testing and analysis.</p></div>
-<div class="timeline-item"><h3>Week 8-12</h3><p>Thesis writing, poster preparation and final submission.</p></div>
+<section id="attendance">
+
+<h1 class="title">Attendance and Supervision Monitoring Form</h1>
+
+<div class="card">
+
+<p>
+The following documents provide evidence of meetings and consultations conducted throughout the Final Year Project.
+</p>
+
+
+<img src="attendance_form.jpg"
+style="
+width:100%;
+max-width:800px;
+display:block;
+margin:auto;
+border-radius:10px;
+border:1px solid #ddd;">
+
+<p style="text-align:center;">
+Figure 5: Attendance and Supervision Monitoring Form.
+</p>
+
 </div>
+
 </section>
 
 <section id="reflection">
+
 <h1 class="title">Experiences & Reflection</h1>
+
 <div class="card">
-<p>The poster presentation session provided valuable experience in communicating my research findings to lecturers and evaluators. This experience improved my communication, confidence and problem-solving skills.</p>
+
+<h3>Challenges Faced</h3>
+
+<ul>
+<li>Understanding the concepts and operators of Genetic Algorithm.</li>
+<li>Designing an appropriate fitness function that considers user preferences and penalties.</li>
+<li>Tuning Genetic Algorithm parameters such as population size and generations.</li>
+<li>Preparing and validating datasets with different numbers of users.</li>
+<li>Interpreting experimental results and analysing model performance.</li>
+<li>Managing time between project development, report writing and presentation preparation.</li>
+</ul>
+
+<br>
+
+<h3>How I Overcame These Challenges</h3>
+
+<ul>
+<li>Read journal articles and previous studies related to Genetic Algorithm.</li>
+<li>Conducted repeated testing and debugging of the Python code.</li>
+<li>Discussed research issues with my supervisor.</li>
+<li>Performed multiple experiments to obtain reliable results.</li>
+<li>Improved time management through proper planning and scheduling.</li>
+</ul>
+
+<br>
+
+<h3>Reflection</h3>
+
+<p>
+Throughout this Final Year Project, I gained valuable experience in conducting research, developing optimization models and implementing Genetic Algorithms using Python. This project strengthened my analytical thinking, problem-solving, programming and communication skills. It also taught me the importance of perseverance, time management and continuous learning when facing research challenges and technical difficulties.
+</p>
+
+<br>
+
+<h3>Future Plan</h3>
+
+<p>
+In the future, I aim to pursue a career in data analytics or analyst-related professions where I can leverage my analytical thinking, programming and optimization skills to solve real-world problems and support data-driven decision making.
+</p>
+
 </div>
+
+</section>
+<section id="appreciation">
+
+<h1 class="title">Appreciation</h1>
+
+<div class="card">
+
+<p>
+I would like to express my sincere gratitude to my supervisor,
+Prof. Madya Dr. Syariza Binti Abdul Rahman,
+for her guidance, encouragement and invaluable advice throughout this Final Year Project.
+
+I would also like to thank my evaluators, lecturers, friends and family members for their continuous support and motivation during this research journey.
+
+Finally, I would like to thank myself for staying determined, resilient and committed throughout this research journey.
+</p>
+
+</div>
+</section>
+
+<section id="references">
+
+<h1 class="title">References</h1>
+
+<div class="card">
+
+<ul>
+<li>Rosati, A., et al. (2022). Sports scheduling optimization using metaheuristic approaches.</li>
+
+<li>Draude, C., et al. (2022). Scheduling optimization in sports facility management.</li>
+
+<li>Habibi, M., et al. (2017). Metaheuristic approaches for sports scheduling problems.</li>
+
+<li>Saleh, A. and Hussain, K. (2010). Optimization techniques for sports scheduling applications.</li>
+</ul>
+
+</div>
+
 </section>
 
 <section id="gallery">
 <h1 class="title">Gallery</h1>
 <div class="gallery">
+
+<figure>
 <img src="coding.png" alt="Coding">
+<figcaption>Python Development and Coding Process</figcaption>
+</figure>
+
+<figure>
 <img src="presentation1.jpg" alt="Presentation">
+<figcaption>Photo with My Self-Designed FYP Presentation Poster</figcaption>
+</figure>
+
+<figure>
 <img src="presentation2.jpg" alt="Supervisor">
+<figcaption>Photo with My Supervisor, Prof. Madya Dr. Syariza Binti Abdul Rahman</figcaption>
+</figure>
+
+<figure>
 <img src="presentation3.jpg" alt="Explaining Poster">
+<figcaption>Presenting Research Findings During Poster Presentation</figcaption>
+</figure>
+
+<figure>
 <img src="presentation4.jpg" alt="Presentation Session">
+<figcaption>Final Year Project Presentation Session</figcaption>
+</figure>
+
 </div>
+
+</section>
+
+<section id="achievements">
+
+<h1 class="title">Achievements & Leadership</h1>
+
+<div class="card">
+
+<ul>
+<li>Dean's List Award for All Semesters 1 to 5 at Universiti Utara Malaysia.</li>
+<li>Best Program Sponsorship Award of USTS CHEN ZHEN EVENT NIGHT – UUM Anugerah Tokoh Siswa 2024.</li>
+<li>Secretary – UUM Official Club Wushu Society.</li>
+<li>Executive Committee of Multimedia and Publicity Department  – UUM Official Club Wushu Society.</li>
+<li>Executive Committee of Sponsorship and Resources Department – Cultural Event Night "CHEN ZHEN" 2024 of Unity Spirit Towards Spring.</li>
+<li>Part-Time E-commerce and Retail Assistant with experience in customer service, business analysis and business operations.</li>
+</ul>
+
+</div>
+
 </section>
 
 <section id="contact">
 <h1 class="title">Contact</h1>
 <div class="card">
 <p>Email: michelleyee0318@gmail.com</p>
-<p>LinkedIn: www.linkedin.com/in/limzhiyee03</p>
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/limzhiyee03" target="_blank">
+www.linkedin.com/in/limzhiyee03
+</a>
+</p>
 </div>
 </section>
 
@@ -176,3 +801,4 @@ padding:30px;
 
 </body>
 </html>
+
