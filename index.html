@@ -16,6 +16,8 @@ nav a{color:white;text-decoration:none;}
 section{padding:90px 10%;}
 .hero{
 min-height:100vh;
+background:url("badminton1.jpg") center center/cover no-repeat;
+}
 
 /* Badminton background image */
 background:
@@ -87,6 +89,17 @@ aspect-ratio:4/3;
 object-fit:cover;
 border-radius:10px;
 display:block;
+}
+
+.coding-figure{
+grid-column:span 2;
+}
+
+.gallery img.original-ratio{
+aspect-ratio:auto;
+height:auto;
+object-fit:contain;
+max-height:350px;
 }
 
 .gallery figcaption{
@@ -318,8 +331,8 @@ followed by fitness evaluation, tournament selection, single-point crossover and
 
 <br>
 
-<h3>Key Findings</h3>
-
+<h3>Results and Analysis</h3>
+<br>
 <h3>User Scalability Analysis</h3>
 
 <h4>Table 1: Performance Summary</h4>
@@ -407,6 +420,7 @@ Figure 3 illustrates the convergence behaviour of the Genetic Algorithm over 200
 </p>
 
 <br>
+<br>
 <h3>Comparison with Simulated Annealing</h3>
 
 <table border="1">
@@ -463,7 +477,9 @@ border-radius:10px;">
 <p style="text-align:center;">
 Figure 4 compares the fitness values obtained by the Genetic Algorithm and Simulated Annealing for different numbers of users.
 </p>
+<br>
 
+<h3>Key Findings</h3>
 <ul>
 <li>Conflict-free schedules were generated for datasets of 30, 50 and 100 users.</li>
 <li>Court utilization increased as the number of users increased.</li>
@@ -753,8 +769,8 @@ Finally, I would like to thank myself for staying determined, resilient and comm
 <h1 class="title">Gallery</h1>
 <div class="gallery">
 
-<figure>
-<img src="coding.png" alt="Coding">
+<figure class="coding-figure">
+<img src="coding.png" alt="Coding" class="original-ratio">
 <figcaption>Python Development and Coding Process</figcaption>
 </figure>
 
