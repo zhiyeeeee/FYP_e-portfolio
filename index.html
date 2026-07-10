@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lim Zhi Yee | FYP E-Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#0A2E73;
+    padding:18px 0;
+    z-index:999;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#FFD700;
+}
+
+section{
+    padding:90px 10%;
+}
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(rgba(10,46,115,0.9),
+    rgba(10,46,115,0.9)),
+    url('https://images.unsplash.com/photo-1517649763962-0c623066013b');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero h2{
+    max-width:900px;
+    margin-top:20px;
+    font-size:30px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#0A2E73;
+    padding:15px 35px;
+    margin-top:35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0A2E73;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.timeline{
+    border-left:4px solid #0A2E73;
+    margin-left:20px;
+    padding-left:30px;
+}
+
+.timeline-item{
+    margin-bottom:35px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+footer{
+    background:#0A2E73;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Me</a></li>
+<li><a href="#fyp">My FYP</a></li>
+<li><a href="#activities">Weekly Activities</a></li>
+<li><a href="#reflection">Reflection</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+<img src="profile.jpg" class="profile">
+
+<h1>LIM ZHI YEE</h1>
+
+<p>Bachelor of Science with Honours (Decision Science)</p>
+
+<h2>
+A PREFERENCE-BASED OPTIMIZATION MODEL FOR UNIVERSITY BADMINTON COURT SCHEDULING USING A GENETIC ALGORITHM
+</h2>
+
+<p>
+Supervisor: Prof. Madya Dr. Syariza Binti Abdul Rahman
+</p>
+
+<a href="#about" class="btn">
+Explore My Journey
+</a>
+
+</section>
+
+<section id="about">
+
+<h1 class="title">About Me</h1>
+
+<div class="card">
+
+<p><b>Name:</b> Lim Zhi Yee</p>
+<p><b>Student ID:</b> 298386</p>
+<p><b>Programme:</b> Bachelor of Science with Honours (Decision Science)</p>
+<p><b>University:</b> Universiti Utara Malaysia</p>
+<p><b>CGPA:</b> 3.79</p>
+
+<br>
+
+<p>
+I am a passionate and detail-oriented Decision Science student with strong interests in optimization, data analytics, and programming. I enjoy solving real-world problems through mathematical modelling and data-driven decision making.
+</p>
+
+</div>
+
+<h2 class="title">Career Aspiration</h2>
+
+<div class="card">
+
+<p>
+My career aspiration is to become a Data Analyst or Operations Research Analyst where I can utilize analytical techniques and optimization methods to solve complex business problems and support strategic decision-making.
+</p>
+
+</div>
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="card">
+<h3>Programming</h3>
+<ul>
+<li>Python</li>
+<li>Java</li>
+<li>SQL</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Analytics</h3>
+<ul>
+<li>Tableau</li>
+<li>Excel</li>
+<li>Data Visualization</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Software</h3>
+<ul>
+<li>MySQL</li>
+<li>Arena Simulation</li>
+<li>Visual Studio Code</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section id="fyp">
+
+<h1 class="title">My Final Year Project</h1>
+
+<div class="card">
+
+<h3>Project Title</h3>
+
+<p>
+A Preference-Based Optimization Model for University Badminton Court Scheduling Using a Genetic Algorithm
+</p>
+
+<br>
+
+<h3>Background</h3>
+
+<p>
+This study develops a preference-based optimization model using a Genetic Algorithm to maximize user satisfaction while minimizing booking conflicts in university badminton court scheduling.
+</p>
+
+<br>
+
+<h3>Research Objectives</h3>
+
+<ul>
+<li>Maximize user preference satisfaction.</li>
+<li>Identify objective functions and constraints.</li>
+<li>Develop a Genetic Algorithm model.</li>
+<li>Evaluate scheduling performance.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="activities">
+
+<h1 class="title">Weekly Activities</h1>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Week 1</h3>
+<p>Topic discussion and preliminary literature review.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Week 2</h3>
+<p>Research objectives and problem formulation.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Week 3</h3>
+<p>Mathematical modelling and constraints formulation.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Week 4</h3>
+<p>Dataset preparation and coding design.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Week 5</h3>
+<p>Genetic Algorithm implementation.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Week 6</h3>
+<p>Debugging and parameter tuning.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Week 7</h3>
+<p>Experimental testing and analysis.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Week 8</h3>
+<p>Result interpretation and report writing.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Week 9-12</h3>
+<p>Poster preparation, thesis correction and final submission.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="reflection">
+
+<h1 class="title">Experiences & Reflection</h1>
+
+<div class="card">
+
+<h3>Challenges</h3>
+
+<ul>
+<li>Understanding Genetic Algorithm concepts.</li>
+<li>Designing the fitness function.</li>
+<li>Tuning algorithm parameters.</li>
+<li>Writing and analysing experimental results.</li>
+</ul>
+
+<br>
+
+<h3>Skills Gained</h3>
+
+<ul>
+<li>Research Skills</li>
+<li>Programming Skills</li>
+<li>Problem Solving</li>
+<li>Time Management</li>
+<li>Academic Writing</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h1 class="title">Gallery</h1>
+
+<div class="gallery">
+
+<img src="poster.jpg">
+<img src="coding.jpg">
+<img src="meeting.jpg">
+<img src="presentation.jpg">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h1 class="title">Contact</h1>
+
+<div class="card">
+
+<p>Email: michelleyee0318@gmail.com</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/limzhiyee03">
+www.linkedin.com/in/limzhiyee03
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 LIM ZHI YEE | Final Year Project E-Portfolio
+</p>
+
+</footer>
+
+</body>
+</html>
