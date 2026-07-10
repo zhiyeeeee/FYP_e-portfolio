@@ -23,7 +23,7 @@ linear-gradient(
 rgba(0,0,0,0.55),
 rgba(0,0,0,0.55)
 ),
-url('badminton.jpg');
+url('badminton1.jpg');
 
 background-size:cover;
 background-position:center;
@@ -68,14 +68,25 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
-.gallery img{
-width:100%;
-border-radius:10px;
-display:block;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
+
 .gallery figure{
 margin:0;
 text-align:center;
+display:flex;
+flex-direction:column;
+}
+
+.gallery img{
+width:100%;
+aspect-ratio:4/3;
+object-fit:cover;
+border-radius:10px;
+display:block;
 }
 
 .gallery figcaption{
@@ -83,6 +94,7 @@ padding-top:10px;
 font-size:14px;
 font-weight:500;
 color:#555;
+min-height:45px;
 }
 .pdf-box{
 padding:25px;
@@ -212,8 +224,6 @@ padding:30px;
 </ul>
 </div>
 
-</div>
-
 </section>
 
 <section id="fyp">
@@ -301,16 +311,18 @@ To maximize user preference satisfaction while ensuring efficient and fair badmi
      margin:auto;
      border-radius:10px;">
 
-<p style="text-align:center;">
+<p style="text-align:left;">
 Figure 1 shows the workflow of the proposed Genetic Algorithm for solving the badminton court scheduling problem. The proposed Genetic Algorithm begins with random court allocation generation,
 followed by fitness evaluation, tournament selection, single-point crossover and random mutation until the maximum generation is reached.
 </p>
+
+<br>
 
 <h3>Key Findings</h3>
 
 <h3>User Scalability Analysis</h3>
 
-<h3>Table 1: Performance Summary</h3>
+<h4>Table 1: Performance Summary</h4>
 
 <table border="1"
 style="width:100%;
@@ -360,10 +372,11 @@ margin-top:20px;">
 </tr>
 
 </table>
-<p style="text-align:center;">
+<p style="text-align:left;">
 Table 1 shows that the proposed model generated conflict-free schedules for datasets of 30, 50 and 100 users. However, conflicts increased significantly for datasets with 300 and 500 users due to limited court capacity.
 </p>
 
+<br>
 
 <h4>Figure 2: GA Convergence Graph (150 generations) </h4>
 
@@ -378,6 +391,8 @@ Table 1 shows that the proposed model generated conflict-free schedules for data
 Figure 2 illustrates the convergence behaviour of the Genetic Algorithm over 150 generations.
 </p>
 
+<br>
+
 <h4>Figure 3: GA Convergence Graph (200 generations) </h4>
 
 <img src="ga_convergence_200_generations.png"
@@ -391,6 +406,7 @@ Figure 2 illustrates the convergence behaviour of the Genetic Algorithm over 150
 Figure 3 illustrates the convergence behaviour of the Genetic Algorithm over 200 generations.
 </p>
 
+<br>
 <h3>Comparison with Simulated Annealing</h3>
 
 <table border="1">
@@ -430,10 +446,11 @@ Figure 3 illustrates the convergence behaviour of the Genetic Algorithm over 200
 <td>4865</td>
 </tr>
 </table>
-<p style="text-align:center;">
+<p style="text-align:left;">
 The comparison indicates that Simulated Annealing achieved better fitness values than the Genetic Algorithm for larger datasets, suggesting that SA is more effective in handling high-demand scheduling scenarios.
 </p>
 
+<br>
 <h4>Figure 4: Comparison of GA and SA Fitness Values</h4>
 
 <img src="ga_vs_sa.png"
@@ -466,6 +483,8 @@ Figure 4 compares the fitness values obtained by the Genetic Algorithm and Simul
 <li>The model used a single-objective optimization approach.</li>
 </ul>
 
+<br>
+
 <h3>Skills Gained Through FYP</h3>
 
 <ul>
@@ -484,7 +503,7 @@ Figure 4 compares the fitness values obtained by the Genetic Algorithm and Simul
 <h3>FYP Poster (PDF)</h3>
 
 <p>
-The poster summarises the research objectives, methodology and key findings of this study.
+The poster summarises the introduction, problem statements, research objectives, significance of study, literature review, methodology, results and analysis, conclusion and recommendations of this study.
 </p>
 
 <br>
